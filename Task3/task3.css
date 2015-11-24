@@ -1,0 +1,12 @@
+* {
+    background-color: #b3d4fc;
+}
+p{
+    color: #ffffff;/*
+    font-family:"黑体";*/
+    font-size: 30px;
+}
+
+.align{
+    vertical-align: text-bottom;
+}
