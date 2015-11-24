@@ -1,0 +1,141 @@
+/*
+ *CSS Reset
+ */
+html{font-size: 62.5%;}/*  鍒濆鍖栧瓧浣� 10/16*100%  */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#68cdd5;color:#fff;font-family:"Hiragino Sans GB","Microsoft Yahei","榛戜綋",sans serif;}
+
+html,body{
+	height: 100%;
+	position: relative;
+}
+
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+
+/*  style  */
+.g-container{
+	margin:0 auto;
+	width: 100%;
+	min-height: 100%;
+	/*max-width: 640px;*/
+}
+.m-tab{/*  鎺у埗鏉�  */
+	position: relative;
+	width:100%;
+	padding-top: 23px;
+	height: 65px;
+	background-color: #22292c;
+}
+.m-tab h1{
+	font-weight: 400;
+	font-size: 2.6rem;
+	text-align: center;
+}
+.m-tab i{
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	background-image: url("../images/css-sprite.png");
+	background-repeat: no-repeat;
+}
+.m-tab span{/*  杩斿洖  */
+	position: absolute;
+	top:27px;
+	left: 17px;
+	padding-left: 30px;
+}
+.m-tab span i{
+	background-position: 0 0;
+	margin-left: -30px;
+}
+.m-tab span a{
+	position: relative;
+	top: -8px;
+	font-size:2.4rem;
+	text-decoration: none;
+	color: #fff;
+}
+.m-tab .u-menu{/*  鑿滃崟  */
+	position: absolute;
+	top:27px;
+	right: 17px;
+	background-position:-55px 0;
+}
+
+.m-content{/*  鍐呭  */
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 640px;
+	height: 768px;
+	background-color: #68cdd5;
+}
+.m-content::after{
+	content: ".";
+	display: inline-block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+}
+.m-content .u-back{/*  杩斿洖閿�  */
+	position: absolute;
+	top:2%;
+	left: 5.4%;
+	width: 55px;
+	height: 55px;
+	background: url("../images/css-sprite.png") 0 -61px ;
+}
+.m-content .u-logo{/*  logo-outer  */
+	position: relative;
+	text-align: center;
+	top:14.5%;
+}
+.m-content .u-logo img{/*  logo  */
+}
+.m-content .u-text{
+	position: relative;
+	top: 28%;
+	margin:0 auto;
+	width: 80%;
+}
+.m-content .u-text p{
+	font-size: 3rem;
+	line-height: 3.6rem;
+}
+.m-content .u-icon-wrapper{
+	position: relative;
+	top:40%;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 408px;
+}
+.m-content .u-contact ul{/*  icon 鏂囨湰- outer  */
+}
+.m-content .u-contact li{
+	display: inline-block;
+}
+.m-content .u-icon div{
+	margin: 0 auto;
+	width: 84px;
+	height: 84px;
+	background: url("../images/css-sprite.png");
+}
+.m-content .u-contact .u-icon-1{
+	float: left;
+}
+.m-content .u-contact .u-icon-1 div{
+	background-position: 111px 124px;
+}
+.m-content .u-contact .u-icon-2{
+	float: right;
+}
+.m-content .u-contact .u-icon-2 div{
+	background-position: 224px 124px;
+}
+.m-content .u-icon span{
+	position: relative;
+	top: 15px;
+	font-size: 2.4rem;
+}
