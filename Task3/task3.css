@@ -1,12 +1,89 @@
-* {
-    background-color: #b3d4fc;
-}
-p{
-    color: #ffffff;/*
-    font-family:"黑体";*/
-    font-size: 30px;
+body{
+	background-color: #57cdce;
+	font-family: "微软雅黑";
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
 }
 
-.align{
-    vertical-align: text-bottom;
+#container{
+	position: relative;
+	width: 100%;
+	
+}
+
+#banner{
+	background-color: #112232;
+	width: 100%;
+	height: 60px;/*
+	text-align: center;
+	vertical-align: middle;*/
+	display: box;
+	display: -moz-box;
+	
+}
+
+#inBox{
+/*	width: 30%;*/
+	float: left;
+	font-size: 100%;
+	
+}
+#juzhong{
+	vertical-align: middle;
+	margin: 10px;
+}
+
+#leftBox{
+	float: right;
+	margin: 10px;
+}
+
+#leftBack{
+	float: left;
+	padding: 15px 0;
+}
+#centerBox{
+	/*width: 100%;*/	
+	text-align: center;/* 这是给logo的
+	vertical-align: -50%;
+	background-color: #78109a;
+	margin: 0 auto;*/
+	padding-top: 15px;
+
+
+}
+
+#back{
+	width: 100%;
+	float: left;
+	margin: 3% 3%;
+}
+
+#content{
+	margin: 10% auto;
+}
+#right{
+	float: right;
+	width: 35%;
+	height: 200px;
+	text-align: center;
+	padding-right: 15%;
+	vertical-align: middle;
+	margin: 0;
+}
+
+#left{
+	float: left;
+	width: 35%;
+	height: 200px;
+	text-align: center;
+	padding-left: 15%;/*
+	border-left-width: 50px;*/
+}
+
+#fotter{
+	clear: both;
+	/*text-align: center;*/
+	margin: 10px 25%;
 }
