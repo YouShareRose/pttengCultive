@@ -7,8 +7,9 @@ body{
 }
 
 #container{
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
+	margin: 0;
 	
 }
 
@@ -18,8 +19,7 @@ body{
 	height: 60px;/*
 	text-align: center;
 	vertical-align: middle;*/
-	display: box;
-	display: -moz-box;
+	
 	
 }
 
@@ -36,7 +36,7 @@ body{
 
 #leftBox{
 	float: right;
-	margin: 10px;
+	margin: 10px ;
 }
 
 #leftBack{
@@ -44,19 +44,27 @@ body{
 	padding: 15px 0;
 }
 #centerBox{
-	/*width: 100%;*/	
+	width: 100%;	
 	text-align: center;/* 这是给logo的
 	vertical-align: -50%;
-	background-color: #78109a;
-	margin: 0 auto;*/
-	padding-top: 15px;
+	background-color: #78109a;*/
+	margin: auto;
+	padding-top: 12px;/**/
+	font-size: 150%;
+}
 
-
+#mirror{
+	padding: 30px auto;
 }
 
 #back{
 	width: 100%;
-	float: left;
+	float: left;/*这里错了
+	margin: 3% 3%;*/
+	/*margin-left: 10px;*/
+}
+
+#clame{
 	margin: 3% 3%;
 }
 
@@ -78,8 +86,8 @@ body{
 	width: 35%;
 	height: 200px;
 	text-align: center;
-	padding-left: 15%;/*
-	border-left-width: 50px;*/
+	padding-left: 15%;
+	border-left-width: 50px;
 }
 
 #fotter{
