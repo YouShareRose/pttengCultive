@@ -1,0 +1,195 @@
+body{
+	background-color:#29bde0;
+	font-family: "微软雅黑";
+	color: #FFFFFF;
+	width: 100%;
+	margin: 0;
+	/*font-size:43%;*/
+}
+
+#container{
+	width: 100%;
+}
+
+
+/*抄来的代码*/
+/*.header{
+	width:100%;
+	color: #fff;
+	background-color: #29bde0;
+	position: relative;
+}
+.home{
+	width: 5%;
+	position: absolute;
+	top:30%;
+	left: 3%;
+	display: block;
+}
+.home img{
+	width:100%;
+}
+.title p{
+	text-align: center;
+	padding:5% 0;
+	font-size:150%;
+}
+.help{
+	width:5%;
+	position: absolute;
+	top:30%;
+	right:3%;
+	
+}
+.help img{
+	width:100%;
+}*/
+
+/*抄来的代码结束*/
+
+
+#banner{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-bottom;
+	position: relative;
+	height: 5%;
+	/*font-size: 1rem;*/
+	padding: 5% 0;
+}
+#gameResult{
+	clear: both;
+}
+#home{
+	float: left;
+	padding-left: 10px;
+	width: 5%;
+}
+#home img{
+	width: 100%;
+}
+
+#info{
+	float: right;
+	padding-right: 10px;
+	width: 5%;
+}
+
+#info img{
+	width: 100%;
+}
+
+#content{
+	text-align: center;
+
+	margin: 10px auto;	
+	width: 60%;
+}
+
+/*复制代码*/
+/*.content{
+	background-color: #29bde0;
+	max-width:640px;
+}*/
+#result{
+  width:70%;
+	text-align: center;
+	padding: 3% 14% ;
+	color:#fff;
+}
+#result img{
+    width:100%;
+}
+#slogan{
+	position: relative;
+  margin:-20% 0 10% 0;
+  font-size:large;
+}
+
+/*
+#result{
+	margin: 0 auto;
+	background-image: url(../images/Task4_win.png);
+	background-repeat:no-repeat ;
+	background-position: center;
+	background-size: contain;
+	width:80%;
+	padding: 3% 10% ;
+}
+
+#slogan{
+	/*padding-top: 50%;*/
+	/*position: relative;
+  margin:-20% 0 10% 0;
+}*/
+
+#text{
+	width: 60%;
+	margin: 0 20%;
+	color: #ffc865;
+	font-weight: bolder;
+}
+
+#character{
+	width: 60%;
+	margin: 0 20%;
+}
+
+#character div{
+	margin-right: 10px ;
+	float: left;
+}
+#record{
+	clear: both;
+	/*width: 100%;*/
+	
+	background-color: #FFFFFF;
+/*	margin: 0 10px;*/
+	
+}
+
+#list{
+	clear: both;
+	border-top-style: solid;
+	border-top-color: #bbbbbb;
+	border-width: thin;
+	width: 60%;
+	padding: 0 20%;
+}
+
+#day{
+	color: #223344;
+	font-size: large;
+	float: left;
+}
+#time{
+	/*display: inline;*/
+	color:#999999;
+	float: right;
+}
+
+.light{
+	clear: both;
+	color: #777777;
+}
+
+#footer{
+	width: 100%;
+	height: 10%;
+	 position:fixed;
+    bottom:0;
+   background:rgba(153,223,240,0.7);
+}
+
+#next{
+	width: 30%;
+	text-align: center;
+	height: 50%;
+	/*margin-top: 3%;*/
+	background: gold;
+	margin: 3% 10%;
+	float: left;
+	border-radius: 5px;
+	vertical-align: middle;
+}
