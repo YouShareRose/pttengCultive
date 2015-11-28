@@ -100,11 +100,13 @@ body{
 }
 #result img{
     width:100%;
+    max-width: 300px;
 }
 #slogan{
+	
 	position: relative;
   margin:-20% 0 10% 0;
-  font-size:large;
+  font-size:1em;
 }
 
 /*
@@ -131,6 +133,11 @@ body{
 	font-weight: bolder;
 }
 
+#statistic{
+	clear: both;
+	width: 60%;
+	margin: 0 20%;
+}
 #character{
 	width: 60%;
 	margin: 0 20%;
