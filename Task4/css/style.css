@@ -1,3 +1,10 @@
+@media screen and (max-width:480px) {
+    body {
+        font-size:43%;
+    }
+  }
+  
+  
 body{
 	background-color:#29bde0;
 	font-family: "微软雅黑";
@@ -54,8 +61,8 @@ body{
 	text-align: center;
 	vertical-align: text-bottom;
 	position: relative;
-	height: 5%;
-	font-size: 1em;
+	max-height: 5%;
+	font-size: 150%;
 	padding: 5% 0;
 }
 #gameResult{
@@ -106,7 +113,7 @@ body{
 	
 	position: relative;
   margin:-20% 0 10% 0;
-  font-size:1em;
+  font-size:150%;
 }
 
 /*
@@ -167,7 +174,7 @@ body{
 
 #day{
 	color: #223344;
-	font-size: large;
+	font-size: 1.5em;
 	float: left;
 }
 #time{
