@@ -1,0 +1,43 @@
+body{
+    background-color: #29BDE0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+
+
+.container {
+    width: 100vw;
+    min-width: 160px;
+    margin: 0 auto;
+}
+
+/* nav区域  */
+#navBar {
+    display: block;
+    width: 100vw;
+    border-bottom: 1px solid #74D4EB;
+}
+#navBar * {
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+#navBar a {
+    margin: 4vw;
+}
+#navBar a img {
+    height: 8vw;
+}
+#info {
+    float: right;
+}
+#navBar p {
+    display: inline-block;
+    width: 60vw;
+    margin: 0 auto;
+    font-size: 6vw;
+}
