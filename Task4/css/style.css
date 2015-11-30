@@ -1,6 +1,6 @@
 @media screen and (max-width:480px) {
     body {
-        font-size:43%;
+        font-size:1vw;
     }
   }
   
@@ -54,7 +54,6 @@ body{
 
 /*抄来的代码结束*/
 
-
 #banner{
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -62,7 +61,7 @@ body{
 	vertical-align: text-bottom;
 	position: relative;
 	max-height: 5%;
-	font-size: 150%;
+	font-size: 4vw;
 	padding: 5% 0;
 }
 #gameResult{
@@ -113,7 +112,7 @@ body{
 	
 	position: relative;
   margin:-20% 0 10% 0;
-  font-size:150%;
+  font-size:4vw;
 }
 
 /*
@@ -206,8 +205,40 @@ body{
 	background: gold;
 	margin: 0 10%;
 	/*padding:0 5%;*/
-	font-size:1em;
+	font-size:3vw;
 	float: left;
 	border-radius: 5px;
 	/*vertical-align: middle;*/
 }
+
+/* nav区域  */
+/*#navBar {
+    display: block;
+    width: 100vw;
+    border-bottom: 1px solid #74D4EB;
+}
+#navBar * {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+}
+#navBar a {
+    margin: 2vw;
+}
+#navBar a img {
+    height: 8vw;
+}
+#info {
+    float: right;
+}
+#home{
+	float: left;
+}
+#navBar p {
+    display: inline-block;
+    width: 60vw;
+    margin: 2vw auto;
+    font-size: 6vw;
+    text-align: center;
+}*/
