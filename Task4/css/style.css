@@ -1,16 +1,11 @@
-@media screen and (max-width:480px) {
-    body {
-        font-size:1vw;
-    }
-  }
-  
-  
+
 body{
 	background-color:#29bde0;
 	font-family: "微软雅黑";
 	color: #FFFFFF;
 	width: 100%;
 	margin: 0;
+	 font-size:4vw;
 	/*font-size:43%;*/
 }
 
@@ -19,41 +14,6 @@ body{
 }
 
 
-/*抄来的代码*/
-/*.header{
-	width:100%;
-	color: #fff;
-	background-color: #29bde0;
-	position: relative;
-}
-.home{
-	width: 5%;
-	position: absolute;
-	top:30%;
-	left: 3%;
-	display: block;
-}
-.home img{
-	width:100%;
-}
-.title p{
-	text-align: center;
-	padding:5% 0;
-	font-size:150%;
-}
-.help{
-	width:5%;
-	position: absolute;
-	top:30%;
-	right:3%;
-	
-}
-.help img{
-	width:100%;
-}*/
-
-/*抄来的代码结束*/
-
 #banner{
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -61,7 +21,7 @@ body{
 	vertical-align: text-bottom;
 	position: relative;
 	max-height: 5%;
-	font-size: 4vw;
+	font-size: 5vw;
 	padding: 5% 0;
 }
 #gameResult{
@@ -93,11 +53,7 @@ body{
 	width: 60%;
 }
 
-/*复制代码*/
-/*.content{
-	background-color: #29bde0;
-	max-width:640px;
-}*/
+
 #result{
   width:70%;
 	text-align: center;
@@ -114,23 +70,6 @@ body{
   margin:-20% 0 10% 0;
   font-size:4vw;
 }
-
-/*
-#result{
-	margin: 0 auto;
-	background-image: url(../images/Task4_win.png);
-	background-repeat:no-repeat ;
-	background-position: center;
-	background-size: contain;
-	width:80%;
-	padding: 3% 10% ;
-}
-
-#slogan{
-	/*padding-top: 50%;*/
-	/*position: relative;
-  margin:-20% 0 10% 0;
-}*/
 
 #text{
 	width: 60%;
@@ -173,7 +112,7 @@ body{
 
 #day{
 	color: #223344;
-	font-size: 1.5em;
+	font-size: 5vw;
 	float: left;
 }
 #time{
@@ -200,45 +139,9 @@ body{
 #next{
 	width: 30%;
 	text-align: center;
-	/*height: 30%;*/
-	/*margin-top: 3%;*/
 	background: gold;
 	margin: 0 10%;
-	/*padding:0 5%;*/
-	font-size:3vw;
+	font-size:4vw;
 	float: left;
 	border-radius: 5px;
-	/*vertical-align: middle;*/
 }
-
-/* nav区域  */
-/*#navBar {
-    display: block;
-    width: 100vw;
-    border-bottom: 1px solid #74D4EB;
-}
-#navBar * {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    
-}
-#navBar a {
-    margin: 2vw;
-}
-#navBar a img {
-    height: 8vw;
-}
-#info {
-    float: right;
-}
-#home{
-	float: left;
-}
-#navBar p {
-    display: inline-block;
-    width: 60vw;
-    margin: 2vw auto;
-    font-size: 6vw;
-    text-align: center;
-}*/
