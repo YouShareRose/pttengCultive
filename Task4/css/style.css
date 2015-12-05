@@ -6,7 +6,6 @@ body{
 	width: 100%;
 	margin: 0;
 	 font-size:4vw;
-	/*font-size:43%;*/
 }
 
 #container{
@@ -94,11 +93,7 @@ body{
 }
 #record{
 	clear: both;
-	/*width: 100%;*/
-	
 	background-color: #FFFFFF;
-/*	margin: 0 10px;*/
-	
 }
 
 #list{
@@ -116,7 +111,6 @@ body{
 	float: left;
 }
 #time{
-	/*display: inline;*/
 	color:#999999;
 	float: right;
 }
@@ -128,7 +122,6 @@ body{
 
 #footer{
 	width: 100%;
-	/*height: 100%;*/
 	max-height: 40px;
 	padding:3% 0;
 	 position:fixed;
