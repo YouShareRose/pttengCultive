@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, 
+			initial-scale=1, maximum-scale=1">
+		<title>首页捉鬼游戏</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<style type="text/css">
+			/*Hiding the checkbox*/
+			#tm {display: none;}
+			/*Nav styles*/
+	.sidenav {
+		/*background: rgb(50, 60, 60); width: 150px;*/
+		position: absolute; left: 0; top: 0; bottom: 0; padding-top: 100px;
+	}
+	.sidenav li {list-style-type: none;}
+	.sidenav a { color: white; text-decoration: none; }
+	.sidenav b {
+		font: bold 12px/48px Montserrat; display: block;
+		opacity: 0; transform: translateX(50px); transition: all 0.4s;
+	}
+	.sidenav i {
+		display: block; width: 50px; float: left; 
+		font-size: 16px; line-height: 48px; text-align: center;
+	}
+	/*Animation controls using checkbox hack*/
+	/*Animate content area to the right*/
+	#tm:checked ~ section {transform: translateX(150px);}
+	/*Animate links from right to left + fade in effect*/
+	#tm:checked ~ .sidenav b {opacity: 1; transform: translateX(0);}
+
+	/*Adding delay to link animation - in multiples of .08s*/
+	/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+	#tm:checked ~ .sidenav li:nth-child(1) b {transition-delay: 0.08s;}
+	#tm:checked ~ .sidenav li:nth-child(2) b {transition-delay: 0.16s;}
+	#tm:checked ~ .sidenav li:nth-child(3) b {transition-delay: 0.24s;}
+	#tm:checked ~ .sidenav li:nth-child(4) b {transition-delay: 0.32s;}
+	#tm:checked ~ .sidenav li:nth-child(5) b {transition-delay: 0.40s;}
+	#tm:checked ~ .sidenav li:nth-child(6) b {transition-delay: 0.48s;}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<!-- Label for #tm checkbox -->
+			<label for="tm"><img src="img/T5_Home_mune.png"/></label>
+			
+		</div>
+		<div class="container">
+			<!-- Checkbox to toggle the menu -->
+			<input type="checkbox" id="tm" />
+			<!--这里插入侧边栏菜单-->
+			<ul class="sidenav">
+					<li><a><img src="img/T5_more_info.png" alt="info" />  <b>Tasks</b></a></li>
+					<li><a><img src="img/T5_more_info.png" alt="info" />  <b>Tasks</b></a></li>
+					<li><a><img src="img/T5_more_info.png" alt="info" />  <b>Tasks</b></a></li>
+					<li><a><img src="img/T5_more_info.png" alt="info" />  <b>Tasks</b></a></li>					
+				</ul>
+				
+			<!--这里是首页的部分-->
+			<div class="lastRecorder">
+				<div>上次游戏：捉鬼猜词版</div>
+				<img src="img/T5_Home_arrow.png"/>
+			</div>
+			
+			<div class="gamelist">
+				<div class="listhead">
+					捉鬼游戏
+				</div>
+				<div class="listcontent">
+					
+					<div id="listitem">
+						<div id="listboard">
+							简化版
+						</div>
+						<div id="listfoot">
+							有1133个用户在玩此款游戏
+						</div>
+					</div>
+					
+					<div id="nextpage">
+						<img src="img/T5_Home_triangle.png"/>
+					</div>
+					
+					<div id="listitem">
+						<div id="listboard">
+							猜词版
+						</div>
+						<div id="listfoot">
+							有1133个用户在玩此款游戏
+						</div>
+					</div>
+					<div id="listitem">
+						<div id="listboard">白痴版	</div>
+						<div id="listfoot">有1133个用户在玩此款游戏	</div>
+				</div>
+				<div class="boardfoot">
+					<i class="cpage"></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

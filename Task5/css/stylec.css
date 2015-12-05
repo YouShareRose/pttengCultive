@@ -1,0 +1,136 @@
+html {
+	max-width: 640px;
+}
+body{
+		max-width: 640px;width: 100%;
+
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 4vw;
+	/*z-index: 0;*/
+}
+
+/*将列表的格式去掉*/
+li {list-style-type: none;}
+
+
+/*设置导航栏，有提个小图标*/
+.banner{
+	padding: 0 3% ;
+	/*overflow: hidden;*/
+	height: 10vw;
+	vertical-align: middle;
+	/*padding-bottom: 300px;*/
+	/*margin-bottom: -30opx;*/
+	/*position: relative;*/
+	/*line-height: 30;*/
+	background-color: #29bde0;
+}
+.banner img {
+	width: 5%;
+	margin: 3%;
+	/*position: relative;*/
+	/*top: 40%;*/
+}
+
+/*.banner img:hover{
+	margin: 5em;
+}*/
+/*中间的白板，不知道怎么命名*/
+.lastRecorder{
+	margin: 4% 5%;
+	padding: 3% 0;
+	border: 1px solid #c9c9c9;
+	font-size: 5vw;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: text-bottom;
+	color: #9a9a9a;
+}
+
+.lastRecorder div {
+	display: inline-block
+}
+.lastRecorder img{
+    float: right;
+    display: inline-block;
+    margin-right: 3%;
+    /*padding: 3% 0;*/
+    height: 7vw;
+}
+
+.gamelist{
+	margin: 4% 5%;
+	/*padding: 3% 0;*/
+	border: 1px solid #c9c9c9;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: text-bottom;
+	color: #9a9a9a;
+	height: 77vh;
+	position: relative;
+}
+
+.listhead{
+	font-size: 7vw;
+	color: #f9b433;
+	padding: 3%;
+	/*margin: 1% 0;*/
+	border-bottom: 1px solid;
+}
+
+#listboard {
+	margin: 3% 10%;
+	padding: 4%;
+	background-color: #29BDE0;
+	color: white;
+	font-size: 7vw;
+}
+
+#nextpage{
+	float: right;
+	height: 7vw;
+	margin-right: 2vw;
+	margin-top: 7vw;
+}
+
+#nextpage img{
+	height: 100%;
+	/*padding-right: 3vw;*/
+}
+
+.boardfoot{
+	/*position: relative;*/
+	height: 1vw;
+	position: absolute;
+	bottom: 0;
+	margin: 5% 43%;
+}
+
+.boardfoot i{
+	display: inline-block;
+	background-color: #c9c9c9;
+	height: 2vw;
+	width: 2vw;
+	/*margin: 1vw;*/
+	
+	/*padding: 1px 5px;*/
+	border-radius: 2vw;
+}
+
+.boardfoot .cpage{
+	background-color: #29BDE0;
+	
+}
+/*
+/*侧边栏的效果*/
+/*.sidenav img {*/
+	/*width: 6.25%;*/
+	/*line-height: 48px;*/
+	/*display: block;*/
+	/*float: left;*/
+/*}*/
+/*.sidenav b {*/
+	/*display: block;*/
+	/*margin-left: 7%;*/
