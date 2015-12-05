@@ -1,1 +1,187 @@
-happy
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, 
+			maximum-scale=1.0, user-scalable=0">-->
+	<title>v2t5c</title>
+	<link rel="stylesheet" type="text/css" href="css/stylec.css"/>
+	<style type="text/css">
+	* {margin: 0; padding: 0;}
+	#wrapper {width: 100%;/* max-height: 500px;*/ 	max-width: 640px;margin: 0 auto;}
+
+	.mobile {
+		float: left; position: relative;
+		/*给div加阴影*/
+		/*box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);*/
+		overflow: hidden;
+	}
+	/*Hiding the checkbox*/
+	#tm {display: none;}
+	/*Content area*/
+	/*不知道该怎么设置高宽让他填满屏幕*/
+	.mobile section {
+		/*background: url("img/mb2.png");*/
+			background-color: #f0f0f0;
+		/*width: 300px;*/ 
+		width: 100vw;
+		/*height: 500px;*/
+		height: 100vh;
+		position: relative; transition: all .25s;
+	}
+	.mobile section label {
+		/*color: white; font: bold 14px Montserrat; text-align: center;
+		border: 2px solid white; border-radius: 4px;
+		display: block; padding: 10px 0;
+		width: 60%; position: absolute; left: 20%; top: 100px;*/
+		/*不同的鼠标光标，手指*/
+		cursor: pointer; /*text-transform: uppercase;*/
+	}
+	/*Nav styles*/
+	.sidenav {
+		/*display: none;*/
+		/*background: rgb(50, 60, 60);*/ 
+		background-color: #fff;
+		/*加阴影*/
+		box-shadow: 0px 0px 50vw #29BDE0 ;
+		width: 77vw;
+		position: absolute; left: -77vw; top: 0; bottom: 0; /*padding-top: 8vw;*/
+		z-index: -1;
+		transition: all .25s;
+	}
+	.sidenav li {
+		list-style-type: none;
+		/*border-bottom: 11px;*/
+		/*border-collapse: #f0f0f0;*/
+		padding: 3% ;
+		border-bottom: 1px #d6d6d6 solid;
+		
+	}
+	.sidenav li img {
+		height: 5vw;
+		vertical-align: text-bottom;
+	}
+	.sidenav a { 
+		color: #29bde0; 
+		text-decoration: none; 
+		
+	}
+	.sidenav b {
+		/*font: bold 12px/48px Montserrat;*/ 
+		display: inline;
+		float: right;
+		margin-right: 1vw;
+		opacity: 0; transform: translateX(50px); transition: all .25s;
+	}
+	.sidenav i {
+		display: block; width: 50px; float: left; 
+		font-size: 16px; line-height: 48px; text-align: center;
+	}
+	/*Animation controls using checkbox hack*/
+	/*Animate content area to the right*/
+	#tm:checked ~ section {
+		transform: translateX(77vw);
+		opacity: .5;
+		/*想让他向下滑动而不得*/
+		/*transform: translateY(10px);*/
+	}
+	/*Animate links from right to left + fade in effect*/
+	#tm:checked ~ .sidenav {display: block;transform: translateX(77vw);}
+	#tm:checked ~ .sidenav b {opacity: 1; transform: translateX(0);}
+
+	/*Adding delay to link animation - in multiples of .08s*/
+	/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+	#tm:checked ~ .sidenav li:nth-child(1) b {transition-delay: 0.08s;}
+	#tm:checked ~ .sidenav li:nth-child(2) b {transition-delay: 0.16s;}
+	#tm:checked ~ .sidenav li:nth-child(3) b {transition-delay: 0.24s;}
+	#tm:checked ~ .sidenav li:nth-child(4) b {transition-delay: 0.32s;}
+	#tm:checked ~ .sidenav li:nth-child(5) b {transition-delay: 0.40s;}
+	#tm:checked ~ .sidenav li:nth-child(6) b {transition-delay: 0.48s;}
+	</style>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="htmleaf-content bgcolor-8">
+			<div id="wrapper">
+				<div class="mobile">
+					<!-- Checkbox to toggle the menu -->
+					<input type="checkbox" id="tm" />
+					<!-- The menu -->
+					<ul class="sidenav">
+						<div class="banner"> </div>
+						<!--<li><div class="banner"></div></li>-->
+						<li><a href="#"><img src="img/T5_more_sound.png"> 公告</img><b><img src="img/T5_more_arrow.png"/></b></a></li>
+						<li><a href="#"><img src="img/T5_more_setting.png"> 设置</img><b><img src="img/T5_more_arrow.png"/></b></a></li>
+						<li><a href="#"><img src="img/T5_more_question.png"> 帮助</img><b><img src="img/T5_more_arrow.png"/></b></a></li>
+						<li><a href="#"><img src="img/T5_more_info.png"> 关于</img><b><img src="img/T5_more_arrow.png"/></b></a></li>
+						<!--<li><a href="#"><i class="fa fa-inbox"><img src="img/T5_more_info.png"/></i><b>Messages</b></a></li>
+						<li><a href="#"><i class="fa fa-pencil"></i><b>New Post</b></a></li>
+						<li><a href="#"><i class="fa fa-cog"></i><b>Settings</b></a></li>
+						<li><a href="#"><i class="fa fa-star"></i><b>Starred</b></a></li>
+						<li><a href="#"><i class="fa fa-power-off"></i><b>Logout</b></a></li>-->
+					</ul>
+					<!-- Content area -->
+					<section>
+						<!-- Label for #tm checkbox -->
+						<!--<label for="tm">Click Me</label>-->
+						<div class="banner">
+			<!-- Label for #tm checkbox -->
+			<label for="tm"><img src="img/T5_Home_mune.png"/></label>
+			
+		</div>
+						<!--这里是首页的部分-->
+						<div class="lastRecorder">
+							<div>上次游戏：捉鬼猜词版</div>
+							<img src="img/T5_Home_arrow.png"/>
+						</div>
+			
+						<div class="gamelist">
+							<div class="listhead">
+								捉鬼游戏
+							</div>
+							<div class="listcontent">
+								
+								<div id="listitem">
+									<div id="listboard">
+										简化版
+									</div>
+									<div id="listfoot">
+										有1133个用户在玩此款游戏
+									</div>
+								</div>
+								
+								<div id="nextpage">
+									<img src="img/T5_Home_triangle.png"/>
+								</div>
+								
+								<div id="listitem">
+									<div id="listboard">
+										猜词版
+									</div>
+									<div id="listfoot">
+										有1133个用户在玩此款游戏
+									</div>
+								</div>
+								<div id="listitem">
+									<div id="listboard">白痴版	</div>
+									<div id="listfoot">有1133个用户在玩此款游戏	</div>
+								</div>
+								<div class="boardfoot">
+									<i class="cpage"></i>
+									<i></i>
+									<i></i>
+									<i></i>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
