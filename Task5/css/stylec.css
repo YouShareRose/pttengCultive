@@ -2,6 +2,7 @@ html {
 	max-width: 640px;
 }
 body{
+	/*为什么最大宽度不起作用？*/
 		max-width: 640px;width: 100%;
 
 	margin: 0;
@@ -102,10 +103,11 @@ li {list-style-type: none;}
 
 .boardfoot{
 	/*position: relative;*/
-	height: 1vw;
+	/*height: 1vw;*/
 	position: absolute;
-	bottom: 0;
-	margin: 5% 43%;
+	bottom: 10px;
+	/*text-align: center;*/
+	margin: 1% 43%;
 }
 
 .boardfoot i{
