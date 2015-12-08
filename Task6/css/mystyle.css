@@ -1,0 +1,226 @@
+/** sprite: test; sprite-image: url('../img/mytestsprite.png'); sprite-layout: horizontal */
+* {
+	/*font-size: 1px;*/
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+body {
+	/*max-width: 640px;*/
+		background:#29bde0;
+}
+/*实现一个向下的三角*/
+#down {
+  width: 0px;
+	height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #f00;
+}
+
+.container {
+	max-width: 640px;
+	width:100%;
+	margin:0 auto;
+	/*text-align: center;*/
+	/*height: 100%vh*/
+	
+}
+
+.g-haeder,
+.g-section-munsic {
+	/*position: fixed;*/
+	width: 100%;
+}
+
+.g-haeder {
+	height: 3rem;
+	background-color: #29bde0;
+}
+
+.g-haeder p {
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.g-haeder i,
+.g-section-munsic i {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin: .5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+
+.g-haeder .icon-mune {
+	float: left;
+	/*width: 2rem;
+	height: 2rem;*/
+	background-image: url(../img/task6_03.png); /** sprite-ref: test */
+}
+
+.g-haeder .icon-close {
+	float: right;
+	/*width: 2rem;
+	height: 2rem;*/
+	background-image: url(../img/task6_06.png); /** sprite-ref: test */
+}
+
+.g-section-munsic {
+	top: 3rem;
+	height: 4rem;
+	background-color: #b9e9f5;
+	/*background-color: #008000;*/
+}
+
+.g-section-munsic p {
+	margin-left: 1rem;
+	/*margin-bottom: 0;*/
+	line-height: 4rem;
+	color:#464646;
+}
+
+.g-section-munsic .icon-play {
+	float: right;
+	width: 2.4rem;
+	height: 2.4rem;
+	margin: .8rem;
+	background-image: url(../img/task6_11.png);
+}
+
+/*.g-section-munsic,*/
+ .u-triangle {
+	display: block;
+	margin: 0 1rem;
+  width: 0px;
+	height: 0px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #b9e9f5;	
+}
+
+.g-section-munsic .u-tips {
+	margin-left: 1rem;
+	margin-top: 0;
+}
+.g-main p{
+	top: 20px
+	width: 100%;
+	line-height: 1rem;
+}
+.g-main {
+	position: relative;
+	padding-bottom: 4rem;/*  rest space for g-footer  */
+}
+.m-player-wrap{
+				/*height: 100%;*/
+				/*max-width: 320px;*/
+				margin: 0 auto;
+				/*margin后面如果只有两个参数的话，
+				 * 第一个表示top和bottom，
+				 * 第二个表示left和right
+				 * 因为0 auto，表示上下边界为0，
+				 * 左右则根据宽度自适应相同值（即居中）
+				 * */
+				/*
+				padding: 50% 0;*/
+				background-color:#ff6600;
+				/*想设置背景色可是没成功*/
+			}
+			
+.smallBox{
+				width:32%;
+				margin-left: 1%;
+				margin-top: 1%;
+				/*padding: 16% 0;*/
+				height: 32%;
+				/*border-radius: 6%;*/
+				float: left;
+				/*background-color:#ffcc00;*/
+			}
+			
+.smallBox:hover .u-player--tools{
+	/*display: block;*/
+	opacity: 1;
+			    /*background-color: #b3d4fc;*/
+			}
+			
+.smallBox dl {
+	margin: 10%;
+	border: 5px solid #fff;
+	background-color: #f5c976;
+	text-align: center;
+}
+
+.smallBox dt {
+	margin: 20% 0;
+	font-size: 1.5rem;
+	color: #565656;
+}
+
+.smallBox dd {
+	background-color: #83b09a;
+	font-size: 1.2rem;
+	/*line-height: 2.2rem;*/
+	color: #fff;
+}
+
+.smallBox .u-player--tools {
+	/*position: absolute;*/
+	margin-top: 10px;
+	margin-left: 10%;
+	width: 80%;
+	opacity: 0;
+	/*text-align: justify;*/
+	text-align: center;
+}
+
+.u-player--tools li{
+	/*text-align: center;*/
+	display: inline-block;
+	width: 20%;
+	padding-bottom: 20%;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position:center;
+	}
+
+.u-player--tools li:nth-child(1){
+	background-image: url(../img/task6_25.png);
+}
+.u-player--tools li:nth-child(2){
+	background-image: url(../img/task6_22.png);
+}
+.u-player--tools li:nth-child(3){
+	background-image: url(../img/task6_19.png);
+}
+.u-player--tools li:nth-child(4){
+	background-image: url(../img/task6_28.png);
+}
+
+.g-footer {
+	position: fixed;
+	bottom: 0;
+	/*box-sizing: border-box;*/
+	/*padding: 0 5%;*/
+	width: 100%;
+	/*max-width: 640px;*/
+	text-align: center;
+	background-color: #29bde0;
+	
+}
+
+.g-footer a{
+	text-decoration: none;
+	color:#fff;
+	font-size: 1.5em;
+	line-height: 1.5;
+	display: block;
+	text-align: center;
+	background: #fbb435;
+	margin:3% 20%;
+}

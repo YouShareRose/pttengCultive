@@ -1,0 +1,72 @@
+* {
+	font-size: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+/*实现一个向下的三角*/
+#down {
+  width: 0px;
+	height: 0px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #f00;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	
+}
+
+.g-haeder,
+.g-section-munsic {
+	position: fixed;
+	width: 100%;
+}
+
+.g-haeder {
+	height: 3rem;
+	background-color: #29bde0;
+}
+
+.g-haeder p {
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.g-haeder i,
+.g-section-munsic i {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin: .5rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+
+.g-haeder .icon-mune {
+	float: left;
+	width: 2rem;
+	height: 2rem;
+  background-image: url('../img/mytestsprite.png');
+  background-position: -0px top;
+}
+
+.g-haeder .icon-close {
+	float: right;
+	width: 2rem;
+	height: 2rem;
+  background-image: url('../img/mytestsprite.png');
+  background-position: -39rem top;
+}
+
+.g-section-munsic {
+	top: 3rem;
+	height: 4rem;
+	background-color: #b9e9f5;
+}
